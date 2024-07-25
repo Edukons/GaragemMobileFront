@@ -2,7 +2,7 @@
 import LogoTitle from '@/components/templates/LogoTitle.vue';
 </script>
 <template>
-  <div class="logo_and_menu">
+    <div class="logo_and_menu">
     <logo-title class="mb-2" />
     <div class="divider" />
     <div class="menu">
@@ -37,11 +37,12 @@ import LogoTitle from '@/components/templates/LogoTitle.vue';
 
 .divider {
   margin-top: 1rem;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #355783;
 }
 
 .menu {
   padding: 3rem;
+  background-color: #355783;
 }
 
 .menu a {
@@ -52,5 +53,7 @@ import LogoTitle from '@/components/templates/LogoTitle.vue';
   gap: 1rem;
   font-size: 1.3rem;
   margin-top: 2.2rem;
+  background-color: #F29F05;
+  border-radius: 30px;
 }
 </style>

@@ -41,14 +41,15 @@ header {
 }
 
 aside {
-  border-right: #eeeeee 1px solid;
-  box-shadow: 0 0 10px 0 #eeeeee;
+  border-right: #F29F05 1px solid;
+  box-shadow: 0 0 10px 0 #F29F05;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   grid-area: aside;
+  background-color: #355783;
 }
 
 main {
@@ -62,7 +63,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 3rem;
-  background-color: #eeeeee;
+  background-color: #F29F05;
   grid-area: footer;
 }
 </style>

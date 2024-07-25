@@ -1,8 +1,8 @@
 <script setup></script>
 <template>
   <div class="logo">
-    <img src="@/assets/logo.png" alt="FakeStore Logo" />
-    <h2>FakeStore</h2>
+    <img src="@/assets/logo.png" alt="Auto garagem Logo" />
+    <h2>Garagem - DM</h2>
   </div>
 </template>
 
@@ -12,6 +12,7 @@
   padding-left: 3rem;
   gap: 1rem;
   align-items: center;
+  background-color: #355783;
 }
 
 .logo img {
@@ -25,5 +26,6 @@
   font-family: 'Belleza', sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #eeee;
 }
 </style>

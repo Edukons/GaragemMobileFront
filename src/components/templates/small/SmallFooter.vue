@@ -9,6 +9,7 @@ onBeforeRouteUpdate(() => {
 });
 </script>
 <template>
+<div id="bottom">
   <div id="footerMenu" :style="{ display: showMenu ? 'block' : 'none' }">
     <RouterLink to="/">
       <i class="mdi mdi-home-outline" />
@@ -38,6 +39,7 @@ onBeforeRouteUpdate(() => {
       Menu
     </div>
   </div>
+</div>
 </template>
 <style scoped>
 #footerMenu {
@@ -46,9 +48,8 @@ onBeforeRouteUpdate(() => {
     right: 0;
 
     width: 20%;
-    border-top: #EEEEEE 1px solid;
-    background-color: white;
-
+    border-top: #355783 1px solid;
+    background-color: #355783;
     display: block;
     padding: 1rem;
 }
@@ -58,7 +59,7 @@ onBeforeRouteUpdate(() => {
     width: 100%;
     justify-content: space-between;
     text-decoration: none;
-    color: #282828;
+    color: #ffffff;
     font-size: 1rem;
     transition: color 0.3s;
 }
@@ -77,12 +78,15 @@ onBeforeRouteUpdate(() => {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #282828;
+    color: #ffffff;
     font-size: 1rem;
     transition: color 0.3s;
 }
 
 .hamburger:hover {
     cursor: pointer;
+}
+#bottom{
+  background-color: #355783;
 }
 </style>
