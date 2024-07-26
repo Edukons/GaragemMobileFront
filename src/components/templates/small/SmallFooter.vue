@@ -21,22 +21,21 @@ onBeforeRouteUpdate(() => {
     </RouterLink>
   </div>
   <div class="icons">
-    <RouterLink to="/categoria">
-      <i class="mdi mdi-home-outline" />
-      Categoria
-    </RouterLink>
-    <RouterLink to="/acessorio">
-      <i class="mdi mdi-account-circle-outline" />
-      Acessorio
-    </RouterLink>
-    <RouterLink to="/cor">
-      <i class="mdi mdi-cart-outline" />
-      Cor
-    </RouterLink>
-    <RouterLink to="/marca">
-      <i class="mdi mdi-cart-outline" />
-      Marca
-    </RouterLink>
+    <router-link to="/acessorios">
+        <i class="icon mdi mdi-account-circle-outline" /> Acessorio
+      </router-link>
+      <router-link to="/categorias">
+        <i class="icon mdi mdi-cart-outline" /> Categoria
+      </router-link>
+      <router-link to="/cores">
+        <i class="icon mdi mdi-cart-outline" /> Cor
+      </router-link>
+      <router-link to="/marcas">
+        <i class="icon mdi mdi-cart-outline" /> Marca
+      </router-link>
+      <router-link to="/login">
+        <i class="icon mdi mdi-account" /> Login
+      </router-link>
 
     <div class="hamburger" @click="showMenu = !showMenu">
       <i class="mdi mdi-menu" />

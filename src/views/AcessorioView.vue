@@ -30,8 +30,8 @@ function editar(acessorio_para_editar) {
 }
 
 async function excluir(id) {
-  await acessoriosApi.excluirCor(id);
-  acessorio.value = await acessoriosApi.buscarTodosOsAcessorios();
+  await acessoriosApi.excluirAcessorio(id);
+  acessorios.value = await acessoriosApi.buscarTodosOsAcessorios();
   limpar();
 }
 </script>
