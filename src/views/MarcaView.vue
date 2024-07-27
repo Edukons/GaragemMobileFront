@@ -38,23 +38,53 @@ async function excluir(id) {
 
 <template>
   <h1>Marcas</h1>
-  <hr />
   <div class="form">
-    <input type="text" v-model="marca.nome" placeholder="Nome" />
-    <input type="text" v-model="marca.nacionalidade" placeholder="Nacionalidade" />
-    <button @click="salvar">Salvar</button>
-    <button @click="limpar">Limpar</button>
+    <input id="campo" type="text" v-model="marca.nome" placeholder="Nome" />
+    <input id="campo" type="text" v-model="marca.nacionalidade" placeholder="Nacionalidade" />
+    <button id="b1" @click="salvar">Salvar</button>
+    <button id="b2" @click="limpar">Limpar</button>
   </div>
-  <hr />
   <ul>
     <li v-for="marca in marcas" :key="marca.id">
       <span @click="editar(marca)">
         ({{ marca.id }}) - {{ marca.nome }} - {{ marca.nacionalidade }}
       </span>
-      <button @click="excluir(marca.id)">X</button>
+      <button id="b3" @click="excluir(marca.id)">X</button>
     </li>
       
   </ul>
 </template>
 
-<style></style>
+<style>
+#campo{
+  border-radius: 10px;
+  height: 40px;
+  width: 300px;
+  background-color: #35578332;
+  margin-right: 8px;
+  font-size: medium;
+}
+#b1{
+  background-color: #355783;
+  border-radius: 10px;
+  color: aliceblue;
+  height: 40px;
+  width: 80px;
+}
+#b2{
+  background-color: #d60606;
+  border-radius: 10px;
+  color: aliceblue;
+  height: 40px;
+  width: 80px;
+  margin-left: 10px;
+}
+#b3{
+  background-color: #355783;
+  border-radius: 10px;
+  color: aliceblue;
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+}
+</style>

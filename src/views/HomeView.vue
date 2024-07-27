@@ -26,4 +26,21 @@ onMounted(() => {
 </script>
 
 <template>
+  <h1>Garagem Desenvolvimento Mobile</h1>
+  <img src="../assets/logo.png" alt="">
 </template>
+
+<style scoped>
+h1{
+  background-color: #355783;
+  border-radius: 20px;
+  width: 600px;
+  text-align: center;
+  margin-left: 530px;
+  color: aliceblue;
+  box-shadow: 0 0 10px 0 #F29F05;
+}
+img{
+  margin-left: 575px;
+}
+</style>

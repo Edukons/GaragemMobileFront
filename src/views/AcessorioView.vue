@@ -38,21 +38,51 @@ async function excluir(id) {
 
 <template>
   <h1>Acessorios</h1>
-  <hr />
-  <div class="form">
-    <input type="text" v-model="acessorio.descricao" placeholder="Descrição" />
-    <button @click="salvar">Salvar</button>
-    <button @click="limpar">Limpar</button>
+  <div class="form" >
+    <input id="campo" type="text" v-model="acessorio.descricao" placeholder="Descrição" />
+    <button id="b1" @click="salvar">Salvar</button>
+    <button id="b2" @click="limpar">Limpar</button>
   </div>
-  <hr />
   <ul>
     <li v-for="acessorio in acessorios" :key="acessorio.id">
       <span @click="editar(acessorio)">
         ({{ acessorio.id }}) - {{ acessorio.descricao }} -
       </span>
-      <button @click="excluir(acessorio.id)">X</button>
+      <button id="b3" @click="excluir(acessorio.id)">X</button>
     </li>
   </ul>
 </template>
 
-<style></style>
+<style>
+#campo{
+  border-radius: 10px;
+  height: 40px;
+  width: 300px;
+  background-color: #35578332;
+  margin-right: 8px;
+  font-size: medium;
+}
+#b1{
+  background-color: #355783;
+  border-radius: 10px;
+  color: aliceblue;
+  height: 40px;
+  width: 80px;
+}
+#b2{
+  background-color: #d60606;
+  border-radius: 10px;
+  color: aliceblue;
+  height: 40px;
+  width: 80px;
+  margin-left: 10px;
+}
+#b3{
+  background-color: #355783;
+  border-radius: 10px;
+  color: aliceblue;
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+}
+</style>
